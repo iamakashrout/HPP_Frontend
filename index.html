@@ -10,7 +10,45 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+    
     <div class="img"></div>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <div display:block>
+                    <img src="download.png"  style ="
+                    width:20px;
+                    height:20px;
+                    margin-right:10px;
+                    margin-top:5px;
+                    ;" >
+                </div>
+                <div >
+                    plan your future
+                </div>
+                
+            </div>
+        </div>
+        <div class="b">
+            <div class="c">
+                House Price Predictor
+            </div>
+        </div>
+        <div class="b">
+            <div class="c">
+                get started
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+    <div style="display:block">
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        </div>
+    
+    <div style="display:flex; flex-direction: row;align-items: baseline;">
+    <div style="display:block;">
     <form class="form">
         <h2>Area (Square Feet)</h2>
         <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
@@ -28,6 +66,9 @@
             <label for="radio-bhk-5">5</label>
         </div>
     </form>
+    </div>
+    <div style="display:block;">
+    
     <form class="form">
         <h2>Bath</h2>
         <div class="switch-field">
@@ -50,7 +91,9 @@
                 <option>Rajaji Nagar</option>
             </select>
         </div>
-        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
-        <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+        
+    </form>
+    </div>
+    </div>
 </body>
 </html>
